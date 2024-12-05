@@ -20,6 +20,7 @@ body {
 /* ========================common============================== */
 .main-content {
     width: 1170px;
+    height: 100%;
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
