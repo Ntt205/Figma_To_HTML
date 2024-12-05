@@ -48,6 +48,7 @@ body {
 }
 
 .btn:hover {
+    cursor: pointer;
     opacity: 0.9;
 }
 
@@ -312,10 +313,11 @@ a {
     line-height: 1.67;
 }
 
-.popular-top .controls{
+.popular-top .controls {
     display: flex;
     gap: 18px;
 }
+
 .popular-top .control-btn {
     background: none;
     width: 40px;
@@ -328,8 +330,81 @@ a {
     border: 1px solid var(--primary_color);
 }
 
-.popular-top .control-btn:hover{
+.popular-top .control-btn:hover {
     background: var(--primary_color);
     color: #fff;
     cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e2dfda;
+}
+
+.popular .course-item:hover {
+    border-radius: 12px;
+    background: #fff;
+    border: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.15);
+}
+.popular .course-item .thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-item .title a{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+}
+
+.popular .rating .value{
+    color: #fea31b;
+    margin-left: 6px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.popular .course-item .foot {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight:600;
+    line-height: 1.67;
+}
+
+.popular .course-item .btn-Book {
+    border: none;
+}
+
+.popular .course-item .btn-Book:hover{
+    background: var(--primary_color);
 }
